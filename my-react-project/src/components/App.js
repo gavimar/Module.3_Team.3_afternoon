@@ -1,5 +1,7 @@
 import React from 'react';
-import queen from '../images/queen.gif';
+import logo from '../images/tarjetas-molonas.png';
+import LandingMain from './LandingMain';
+import Footer from './Footer';
 import '../stylesheets/App.scss';
 
 class App extends React.Component {
@@ -9,24 +11,16 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={queen} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+      
+        <div className="Landing-main">
+          <LandingMain image={logo}
+          />
+          <Footer
+          />
+        </div>
+      );
+    }
 }
+
 
 export default App;
